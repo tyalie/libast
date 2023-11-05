@@ -1,0 +1,4 @@
+name: libast
+build:
+  cmake: .
+  kconfig: Kconfig

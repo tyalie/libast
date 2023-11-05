@@ -22,6 +22,11 @@
     -   [Abstract syntax tree illustration](#abstract-syntax-tree-illustration)
     -   [Parsing the expression in a text file](#parsing-the-expression-in-a-text-file)
 
+> [!NOTE]
+> This is a fork that includes support for the Zephyr RTOS. With this the library 
+> can easily be included in your Zephyr project as an external module. Include it
+> in your `west.yml` as you would do it with any other module or library.
+
 ## Introduction
 
 This is a portable library written in C, for parsing and evaluating mathematical and logical expressions specified in [infix notation](https://en.wikipedia.org/wiki/Infix_notation). This is done with the [abstract syntax tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree) (AST), constructed using the [shunting-yard algorithm](https://en.wikipedia.org/wiki/Shunting-yard_algorithm). And user-supplied variables are allowed.
